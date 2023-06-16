@@ -1,12 +1,5 @@
-export default  function Planets({list}: {list: any[]}){
+export default function Planet({name, children }: { name: string, children: React.ReactNode }) {
     return (
-        <>
-            <h2>planets</h2>
-            <ul>
-                {list.map((item, index) => (
-                    <li key={index}>{item.name}</li>
-                ))}
-            </ul>
-        </>
+        <li>{name} {children}</li>
     )
 }

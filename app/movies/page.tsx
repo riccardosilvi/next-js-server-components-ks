@@ -1,6 +1,6 @@
 import Movies from "@/app/movies/movies";
 import {Suspense} from "react";
-import Planets from "@/app/movies/planet";
+import Planets from "@/app/movies/planets";
 import Luke from "@/app/movies/charachter";
 async function getMovies() {
     const res = await fetch(`https://swapi.dev/api/films`)
