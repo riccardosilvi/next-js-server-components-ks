@@ -7,7 +7,12 @@ async function getMovies() {
     return res.json()
 }
 async function getPlanets() {
-    const res = await fetch(`https://swapi.dev/api/planets`)
+    await new Promise(resolve => setTimeout(resolve, 2000))
+    const res = await fetch(
+        `https://swapi.dev/api/planets`,
+        // revalidate this data every 3 seconds
+        // https://nextjs.org/docs/app/building-your-application/data-fetching/revalidating#background-revalidation
+        { next: { revalidate: 3 } })
     return res.json()
 }
 
