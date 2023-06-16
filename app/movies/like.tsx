@@ -9,7 +9,7 @@ export default function LikeButton({onClick}: {onClick?: () => void}) {
     return (
         <button onClick={() => {
             setIsLiked(prev => {
-                (prev ? increment: decrement)();
+                (prev ? decrement: increment)();
                 return !prev
             })
             onClick?.()
