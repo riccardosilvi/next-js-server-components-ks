@@ -1,13 +1,13 @@
 import styles from './page.module.css'
 import Header from "@/app/header";
 import Footer from "@/app/footer";
-import Logo from "@/app/logo";
+import LogoCounter from "@/app/does-work-children-inside-client";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <Header />
-      <Logo />
+      <LogoCounter/>
       <Footer/>
     </main>
   )
