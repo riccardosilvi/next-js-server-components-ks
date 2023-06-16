@@ -1,4 +1,4 @@
-"use-client"
+"use client"
 import {LikeContext} from "@/app/movies/likes-provider";
 import {useContext} from "react";
 export default function LikesCounter() {
